@@ -11,6 +11,7 @@ export interface ExtractedFields {
 
 export type ContractStatus = "uploaded" | "processing" | "extracted" | "failed";
 
+
 export interface Contract {
   id: string;
   fileName: string;
