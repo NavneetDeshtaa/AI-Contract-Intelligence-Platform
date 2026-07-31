@@ -5,8 +5,6 @@ export interface User {
   role: "admin" | "user";
 }
 
-
-
 export interface AuthResponse {
   token: string;
   user: User;
