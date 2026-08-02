@@ -22,9 +22,7 @@ export default function LoginPage() {
 
     try {
       const { token } = await login(email, password);
-
       tokenStorage.set(token);
-
       navigate("/contracts");
     } catch {
       setError("Invalid email or password.");
@@ -34,7 +32,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 via-white to-slate-100">
 
       <div className="grid min-h-screen lg:grid-cols-2">
 
